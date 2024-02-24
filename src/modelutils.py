@@ -46,7 +46,6 @@ def get_model(model_path, load_quantized=None, dtype="auto", model_seqlen=2048):
                 trust_remote_code=True,
                 torch_dtype=dtype,
                 low_cpu_mem_usage=True,
-                local_files_only=True,
             )
     model.seqlen = model_seqlen
     print("Model loaded sucessfully ...")
